@@ -3,5 +3,5 @@ bin/
 obj/
 
 Intro/.vs
-Intro/.bin
-Intro/.obj
+Intro/bin
+Intro/obj
