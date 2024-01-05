@@ -1,3 +1,7 @@
 .vs/
 bin/
 obj/
+
+Intro/.vs
+Intro/.bin
+Intro/.obj
