@@ -1,7 +1,21 @@
-.vs/
-bin/
+# Ignore files built by Visual Studio
+[Bb]in/
 obj/
+csx/
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.cache
+*.ilk
+*.log
+*.sbr
 
-Intro/.vs
-Intro/bin
-Intro/obj
+# Visual Studio 2015 cache/options directory
+.vs/
