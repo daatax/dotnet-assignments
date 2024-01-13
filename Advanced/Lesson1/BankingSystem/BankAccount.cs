@@ -1,22 +1,26 @@
-﻿using Advanced.Lesson1.BankingSystem.Contracts;
+﻿using BankingSystem.Contracts;
 
-namespace Advanced.Lesson1.BankingSystem
+namespace BankingSystem
 {
     public class BankAccount
     {
         private readonly IAccountHandler accountHandler;
 
-        public BankAccount(IAccountHandler account) {
+        public BankAccount(IAccountHandler account)
+        {
             this.accountHandler = account;
         }
 
-        public void Deposit(double amount) {
+        public void Deposit(double amount)
+        {
             accountHandler.Deposit(amount);
         }
-        public void Withdraw(double amount) {
+        public void Withdraw(double amount)
+        {
             accountHandler.Withdraw(amount);
         }
-        public string GetAccountDetails() {
+        public string GetAccountDetails()
+        {
             return accountHandler.GetAccountDetails();
         }
     }

@@ -1,6 +1,6 @@
-﻿using Advanced.Lesson1.BankingSystem.Contracts;
+﻿using BankingSystem.Contracts;
 
-namespace Advanced.Lesson1.BankingSystem
+namespace BankingSystem.Handlers
 {
     public abstract class BankAccountHandler : IAccountHandler
     {
@@ -36,14 +36,16 @@ namespace Advanced.Lesson1.BankingSystem
             private set { }
         }
 
-        public BankAccountHandler(ILog log, string accountNumber, string holderName) {
+        public BankAccountHandler(ILog log, string accountNumber, string holderName)
+        {
             this.accountNumber = accountNumber;
             this.holderName = holderName;
             this.log = log;
         }
 
         public abstract string GetAccountDetails();
-        public virtual void Deposit(double amount) {
+        public virtual void Deposit(double amount)
+        {
             log.Info($"Trying to deposit {amount} to the account ...");
             if (amount <= 0) {
                 log.Error($"Invalid try of deposit. Amount cannot be negative. Deposit amount: {amount}");
@@ -54,7 +56,8 @@ namespace Advanced.Lesson1.BankingSystem
             log.Info($"Deposit of {amount} successfully made. New balance: {this.balance}");
         }
 
-        public virtual void Withdraw(double amount) {
+        public virtual void Withdraw(double amount)
+        {
             log.Info($"Trying to withdraw {amount} from the account ...");
             if (amount <= 0) {
                 log.Error($"Invalid try of withdrawal. Amount cannot be negative. Withdraw amount: {amount}");

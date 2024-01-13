@@ -1,13 +1,15 @@
-﻿using Advanced.Lesson1.BankingSystem.Contracts;
+﻿using BankingSystem.Contracts;
 
-namespace Advanced.Lesson1.BankingSystem.Logger
+namespace BankingSystem.Logger
 {
     public class ConsoleLogger : ILog
     {
-        public void Info(string message) {
+        public void Info(string message)
+        {
             Console.WriteLine($"Info: {message}");
         }
-        public void Error(string message) {
+        public void Error(string message)
+        {
             Console.WriteLine($"Error: {message}");
         }
     }

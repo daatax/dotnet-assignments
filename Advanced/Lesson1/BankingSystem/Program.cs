@@ -1,12 +1,13 @@
-﻿using Advanced.Lesson1.BankingSystem.Contracts;
-using Advanced.Lesson1.BankingSystem.Handlers;
-using Advanced.Lesson1.BankingSystem.Logger;
+﻿using BankingSystem.Logger;
+using BankingSystem.Handlers;
+using BankingSystem.Contracts;
 
-namespace Advanced.Lesson1.BankingSystem
+namespace BankingSystem
 {
     public class Program
     {
-        public static void Main(string[] args) {
+        public static void Main(string[] args)
+        {
             ILog log = new ConsoleLogger();
 
             var savingsAccount = new BankAccount(new SavingsAccountHandler(log, "11010110", "savingAccount Holder Name"));

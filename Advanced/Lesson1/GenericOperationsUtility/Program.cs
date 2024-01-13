@@ -1,10 +1,12 @@
 ﻿using System.Diagnostics;
 
-namespace Advanced.Lesson1.GenericOperationsUtility
+#pragma warning disable CS8602
+namespace GenericOperationsUtility
 {
     public class Program
     {
-        public static void Main(string[] args) {
+        public static void Main(string[] args)
+        {
             ICalculationUtility<double> numericCalculator = new NumericCalculationUtils();
             double num1 = 10;
             double num2 = 3;
@@ -46,7 +48,8 @@ namespace Advanced.Lesson1.GenericOperationsUtility
         /// from the specified exception object.
         /// </remarks>
         /// <param name="exception">The exception for which to retrieve the message.</param>
-        public static string GetFormattedExceptionDetails(Exception exception) {
+        public static string GetFormattedExceptionDetails(Exception exception)
+        {
 
             var trace = new StackTrace(exception, true);
             var className = Path.GetFileNameWithoutExtension(trace.GetFrame(0).GetFileName());

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Advanced.Lesson1.GenericOperationsUtility
+﻿namespace GenericOperationsUtility
 {
     public interface ICalculationUtility<T>
     {
