@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced", "Advanced.csproj", "{032BED66-A5E0-492A-A0F4-4C98314BACE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShoppingSystem", "..\OnlineShoppingSystem\OnlineShoppingSystem.csproj", "{DE28C35F-830D-47FD-80F5-0888848DD2D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson2", "Lesson2", "{046D06AB-5908-4032-8987-931677E7DED5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson1", "Lesson1", "{3455F143-DFD9-4352-9D02-C9A32CE70F63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSystem", "..\BankingSystem\BankingSystem.csproj", "{8E4F1DCB-E20E-4007-BF4D-6309B0A2869E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericOperationsUtility", "..\GenericOperationsUtility\GenericOperationsUtility.csproj", "{4B082835-AB17-4C1F-BD82-F63CD1334D7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson3", "Lesson3", "{1FF7EFB0-0096-4793-8889-FD7160B8EDAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCoinPriceReaderManager", "..\BitCoinPriceReaderManager\BitCoinPriceReaderManager.csproj", "{61CB5FE5-C31A-41B3-AA34-F4E6582D998A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +23,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{032BED66-A5E0-492A-A0F4-4C98314BACE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{032BED66-A5E0-492A-A0F4-4C98314BACE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{032BED66-A5E0-492A-A0F4-4C98314BACE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{032BED66-A5E0-492A-A0F4-4C98314BACE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE28C35F-830D-47FD-80F5-0888848DD2D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE28C35F-830D-47FD-80F5-0888848DD2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE28C35F-830D-47FD-80F5-0888848DD2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE28C35F-830D-47FD-80F5-0888848DD2D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4F1DCB-E20E-4007-BF4D-6309B0A2869E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4F1DCB-E20E-4007-BF4D-6309B0A2869E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4F1DCB-E20E-4007-BF4D-6309B0A2869E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4F1DCB-E20E-4007-BF4D-6309B0A2869E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B082835-AB17-4C1F-BD82-F63CD1334D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B082835-AB17-4C1F-BD82-F63CD1334D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B082835-AB17-4C1F-BD82-F63CD1334D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B082835-AB17-4C1F-BD82-F63CD1334D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61CB5FE5-C31A-41B3-AA34-F4E6582D998A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61CB5FE5-C31A-41B3-AA34-F4E6582D998A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61CB5FE5-C31A-41B3-AA34-F4E6582D998A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61CB5FE5-C31A-41B3-AA34-F4E6582D998A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE28C35F-830D-47FD-80F5-0888848DD2D5} = {046D06AB-5908-4032-8987-931677E7DED5}
+		{8E4F1DCB-E20E-4007-BF4D-6309B0A2869E} = {3455F143-DFD9-4352-9D02-C9A32CE70F63}
+		{4B082835-AB17-4C1F-BD82-F63CD1334D7B} = {3455F143-DFD9-4352-9D02-C9A32CE70F63}
+		{61CB5FE5-C31A-41B3-AA34-F4E6582D998A} = {1FF7EFB0-0096-4793-8889-FD7160B8EDAD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D061FB3D-E715-4383-9738-C35B9448BECA}
